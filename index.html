@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- font awasume -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- daisyUI + tailwind -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .fsora {
+        font-family: "Sora", serif;
+    }
+  </style>
 </head>
-<body>
-    
+<body class="fsora">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <nav class="w-10/12 mx-auto flex justify-between items-center">
+            <div class="navbar justify-between">
+                <img src="c2-assets/logo-header.png" alt="">
+
+            <div class="">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
+                    <li><a class="text-lg">Product</a></li>
+                    <li><a class="text-lg">Services</a></li>
+                    <li><a class="text-lg">Contact Us</a></li>
+                </ul>
+                </div>
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                <li><a class="text-lg">Product</a></li>
+                <li><a class="text-lg">Services</a></li>
+                <li><a class="text-lg">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="hidden lr:flex md:block justify-end items-center gap-3">
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                <i class="fa-solid fa-cart-shopping text-xl mr-1"></i>
+                <a class="btn btn-outline btn-success text-lg px-3">Login</a>
+                <a class="btn btn-success text-white text-lg px-4">Register</a>
+            </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
