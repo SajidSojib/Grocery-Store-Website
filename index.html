@@ -27,9 +27,17 @@
 </head>
 <body class="fsora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
-        <nav class="w-10/12 mx-auto flex justify-between items-center">
+        <nav class="w-11/12 sm:w-10/12 mx-auto flex justify-between items-center">
             <div class="navbar justify-between">
-                <img src="c2-assets/logo-header.png" alt="">
+                <img class="md:hidden" src="c2-assets/Group.png" alt="">
+                <img class="hidden md:block" src="c2-assets/logo-header.png" alt="">
+
+                <div class="hidden sm:block lg:hidden justify-end items-center gap-3">
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                <i class="fa-solid fa-cart-shopping text-xl mr-1"></i>
+                <a class="btn btn-outline btn-success text-lg px-3">Login</a>
+                <a class="btn btn-success text-white text-lg px-4">Register</a>
+                </div>
 
             <div class="">
                 <div class="dropdown">
@@ -49,7 +57,7 @@
                 </div>
                 <ul
                     tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow right-0">
                     <li><a class="text-lg">Product</a></li>
                     <li><a class="text-lg">Services</a></li>
                     <li><a class="text-lg">Contact Us</a></li>
@@ -64,7 +72,7 @@
                 <li><a class="text-lg">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="hidden lr:flex md:block justify-end items-center gap-3">
+            <div class="hidden lg:block justify-end items-center gap-3">
                 <i class="fa-solid fa-magnifying-glass text-xl"></i>
                 <i class="fa-solid fa-cart-shopping text-xl mr-1"></i>
                 <a class="btn btn-outline btn-success text-lg px-3">Login</a>
@@ -72,6 +80,16 @@
             </div>
             </div>
         </nav>
+        <hr class="bg-green-700">
+        <!-- banner -->
+         <section class="text-center md:px-36 lg:px-[210px]">
+            <h1 class="w-11/12 mx-auto text-4xl font-semibold mt-12 mb-4 md:mt-15 lg:mt-20 md:text-5xl lg:leading-normal">Freshness <span class="text-green-600">You Can<br>Count</span> On, Prices You'll Love!</h1>
+            <p class="w-11/12 mx-auto font-light mb-4 md:text-xl lg:px-[40px]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            <img class="w-full" src="c2-assets/hero-vegetables.png" alt="">
+         </section>
     </header>
+    <main>
+        
+    </main>
 </body>
 </html>
