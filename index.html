@@ -23,6 +23,27 @@
     .fsora {
         font-family: "Sora", serif;
     }
+    .bcover1,.bcover2,.bcover3{
+        background: linear-gradient(
+        0deg, 
+        rgb(9, 9, 9) 2.884%, 
+        rgba(16, 16, 16, 0) 101.034%), url(c2-assets/bg-img3.webp);
+        background-size: cover;
+    }
+    .bcover2{
+        background: linear-gradient(
+        0deg, 
+        rgb(9, 9, 9) 2.884%, 
+        rgba(16, 16, 16, 0) 101.034%), url(c2-assets/bg-img-4.jpg);
+        background-size: cover;
+    }
+    .bcover3{
+        background: linear-gradient(
+        0deg, 
+        rgb(9, 9, 9) 2.884%, 
+        rgba(16, 16, 16, 0) 101.034%), url(c2-assets/bg-img2.jpg);
+        background-size: cover;
+    }
     .ani{
         animation: spin 4s linear infinite;
     }
@@ -78,7 +99,7 @@
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-8 w-8 text-green-700"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -114,7 +135,6 @@
             </div>
             </div>
         </nav>
-        <!-- <hr class="bg-green-700"> -->
         <!-- banner -->
          <section class="text-center md:px-36 lg:px-[210px]">
             <h1 class="w-11/12 mx-auto text-4xl font-semibold mt-12 mb-4 md:mt-15 lg:mt-20 md:text-5xl lg:leading-normal">Freshness <span class="text-green-600 ani2">You Can<br>Count</span> On, Prices You'll Love!</h1>
@@ -252,7 +272,7 @@
           </section>
 
           <!-- offer -->
-           <section class="w-11/12 sm:w-10/12 mx-auto mb-96">
+           <section class="w-11/12 sm:w-10/12 mx-auto mb-28 md:mb-32 lg:mb-36">
             <h2 class="text-green-600 font-semibold text-3xl mb-4 sm:mb-8">Arrival & Offers</h2>
             <div class="flex flex-col md:flex-row gap-6">
                 <!-- card1 -->
@@ -283,7 +303,57 @@
 
             </div>
            </section>
+
+           <!-- customer review -->
+            <section class="w-11/12 sm:w-10/12 mx-auto mb-96">
+            <h2 class="text-green-600 font-semibold text-4xl mb-4 sm:mb-8">Customer Review</h2>
+            <div>
+                <div class="carousel w-full rounded-2xl">
+                    <!-- slide1 -->
+                    <div id="slide1" class="bcover1 carousel-item relative w-full py-28">
+                        <div class="flex flex-col justify-center items-center gap-5">
+                            <div><img class="rounded-full" src="c2-assets/bhai.jpeg" alt=""></div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white">Dame kom, Mane valo</h3>
+                            <p class="text-gray-300 text-center w-2/3">This is due to their excellent service, competitive pricing and customer support, it's throughly refreshing to get such a personal touch.</p>
+                            <h3 class="font-bold text-2xl text-[#2ccf29]">Jhankar Bhai</h3>
+                        </div>          
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="bcover2 carousel-item relative w-full">
+                        <div class="flex flex-col justify-center items-center gap-5">
+                            <img class="rounded-full" src="c2-assets/romaan.jpeg" alt="">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white">Dame kom, Mane valo</h3>
+                            <p class="text-gray-300 text-center w-2/3">This is due to their excellent service, competitive pricing and customer support, it's throughly refreshing to get such a personal touch.</p>
+                            <h3 class="font-bold text-2xl text-[#2ccf29]">Roman Reigns</h3>
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="bcover3 carousel-item relative w-full">
+                        <div class="flex flex-col justify-center items-center gap-5">
+                            <img class="rounded-full" src="c2-assets/john-png.jpeg" alt="">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white">Dame kom, Mane valo</h3>
+                            <p class="text-gray-300 text-center w-2/3">This is due to their excellent service, competitive pricing and customer support, it's throughly refreshing to get such a personal touch.</p>
+                            <h3 class="font-bold text-2xl text-[#2ccf29]">John Cena</h3>
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            </section>
     </main>
+
     <footer class="bg-[#179800] relative">
         <!-- card -->
          <section class="w-11/12 sm:w-10/12 mx-auto bg-[#EFEBE3] flex flex-col md:flex-row justify-evenly items-center gap-6 md:gap-16 lg:gap-0 py-8 px-4 md:py-11 md:pr-4 lg:py-14  rounded-2xl absolute left-0 right-0 -top-[270px] lg:-top-1/2 md:-top-44 sm:-top-80">
