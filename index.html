@@ -23,12 +23,46 @@
     .fsora {
         font-family: "Sora", serif;
     }
+    .ani{
+        animation: spin 4s linear infinite;
+    }
+    @keyframes spin{
+        0%{
+            transform: scale(0);
+        }
+        50%{
+            transform: scale(0.6);
+        }
+        85%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    .ani2{
+        animation: sobuj 4s ease-in-out infinite;
+    }
+    @keyframes sobuj{
+        0%{
+            color: lightgray;
+        }
+        33%{
+            color: #16a34a;
+        }
+        66%{
+            color: #16a34a;
+        }
+        100%{
+            color: lightgray;
+        }
+    }
   </style>
 </head>
 <body class="fsora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-28 md:mb-32 lg:mb-36">
-        <nav class="w-11/12 sm:w-10/12 mx-auto flex justify-between items-center">
-            <div class="navbar justify-between">
+        <nav class="flex justify-between items-center border border-x-0 border-t-0 border-b-2 border-b-green-700 md:border-none">
+            <div class="navbar justify-between w-11/12 sm:w-10/12 mx-auto">
                 <img class="md:hidden" src="c2-assets/Group.png" alt="">
                 <img class="hidden md:block" src="c2-assets/logo-header.png" alt="">
 
@@ -80,12 +114,12 @@
             </div>
             </div>
         </nav>
-        <hr class="bg-green-700">
+        <!-- <hr class="bg-green-700"> -->
         <!-- banner -->
          <section class="text-center md:px-36 lg:px-[210px]">
-            <h1 class="w-11/12 mx-auto text-4xl font-semibold mt-12 mb-4 md:mt-15 lg:mt-20 md:text-5xl lg:leading-normal">Freshness <span class="text-green-600">You Can<br>Count</span> On, Prices You'll Love!</h1>
+            <h1 class="w-11/12 mx-auto text-4xl font-semibold mt-12 mb-4 md:mt-15 lg:mt-20 md:text-5xl lg:leading-normal">Freshness <span class="text-green-600 ani2">You Can<br>Count</span> On, Prices You'll Love!</h1>
             <p class="w-11/12 mx-auto font-light mb-4 md:text-xl lg:px-[40px]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-            <img class="w-full" src="c2-assets/hero-vegetables.png" alt="">
+            <img class="w-full ani" src="c2-assets/hero-vegetables.png" alt="">
          </section>
     </header>
     <main>
@@ -129,7 +163,7 @@
                 <div class="pt-16 pb-48 pr-16 pl-7 md:pb-44 bg-gradient-to-br from-[#3edb26] to-white rounded-xl relative col-span-2 md:row-span-3">
                     <h2 class="text-white font-semibold text-3xl mb-4 sm:mb-8">30% off</h2>
                     <p class="text-gray-600 mb-3 sm:mb-7">Discover a world of treats, toys and essentials hand picked for</p>
-                    <button class="btn btn-default px-3 font-normal text-lg">Buy Now</button>
+                    <button class="btn btn-default bg-white px-3 font-normal text-lg">Buy Now</button>
                     <img class="absolute bottom-0 right-0" src="c2-assets/vegetable-offer.png" alt="">
                 </div>
                 <!-- other cards -->
@@ -144,7 +178,7 @@
                     </div>
                     <!-- small2 -->
                      <div class="flex items-center gap-2 p-2 sm:p-3  bg-white rounded-lg">
-                        <div class="w-2/5 sm:w-auto"><img class="p-2 rounded-lg bg-[#EFEBE3]" src="c2-assets/Potato.png" alt=""></div>
+                        <div class="w-2/5 sm:w-auto"><img src="c2-assets/alu.png" alt=""></div>
                         <div>
                             <h6 class="text-[10px] sm:text-xs"><span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>  4.5</h6>
                             <h4 class="text-[12px] sm:text-base font-semibold">Potato 1kg</h4>
@@ -171,7 +205,7 @@
                     </div>
                     <!-- small5 -->
                      <div class="flex items-center gap-2 p-2 sm:p-3  bg-white rounded-lg">
-                        <div class="w-2/5 sm:w-auto"><img class="p-2 rounded-lg bg-[#EFEBE3]" src="c2-assets/Potato.png" alt=""></div>
+                        <div class="w-2/5 sm:w-auto"><img src="c2-assets/alu.png" alt=""></div>
                         <div>
                             <h6 class="text-[10px] sm:text-xs"><span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>  4.5</h6>
                             <h4 class="text-[12px] sm:text-base font-semibold">Potato 1kg</h4>
@@ -198,7 +232,7 @@
                     </div>
                     <!-- small8 -->
                      <div class="flex items-center gap-2 p-2 sm:p-3  bg-white rounded-lg">
-                        <div class="w-2/5 sm:w-auto"><img class="p-2 rounded-lg bg-[#EFEBE3]" src="c2-assets/Potato.png" alt=""></div>
+                        <div class="w-2/5 sm:w-auto"><img src="c2-assets/alu.png" alt=""></div>
                         <div>
                             <h6 class="text-[10px] sm:text-xs"><span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>  4.5</h6>
                             <h4 class="text-[12px] sm:text-base font-semibold">Potato 1kg</h4>
